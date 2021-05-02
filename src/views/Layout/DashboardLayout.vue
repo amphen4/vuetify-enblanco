@@ -99,7 +99,7 @@ export default {
     },
     computed: mapState({
         user: state => state.user
-    })
+    }),
 }
 </script>
 <style lang="scss">

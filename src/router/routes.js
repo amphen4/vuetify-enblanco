@@ -6,7 +6,7 @@ const routes = [
     {
         path: '/',
         component: DashboardLayout,
-        redirect: '/login',
+        redirect: '/home',
         name: 'Dashboard layout',
         /*
         meta: {
@@ -17,14 +17,18 @@ const routes = [
             {
                 path: 'login',
                 name: 'Login',
-                component: Login
+                component: Login,
+                meta:{
+                    title: 'Inicio de sesión'
+                }
             },
             {
                 path: 'home',
                 name: 'Home',
                 component: Home,
                 meta: {
-                    requiresAuth: true
+                    requiresAuth: true,
+                    title: 'Home'
                 }
             },
         ]
